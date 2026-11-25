@@ -206,6 +206,19 @@ dialog::backdrop{background:rgba(5,3,15,.7);backdrop-filter:blur(4px)}
  .role-card,.work-card,.principle{margin-bottom:.7rem;break-inside:avoid}
 }
 
+
+/* Professional recommendations */
+.testimonial-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin-top:1.4rem}
+.testimonial-card{border:1px solid var(--line);background:var(--surface,rgba(255,255,255,.035));border-radius:18px;padding:1.35rem;display:flex;flex-direction:column;gap:.9rem}
+.testimonial-card blockquote{margin:0;color:var(--ink);font-size:1rem;line-height:1.72}
+.testimonial-card blockquote:before{content:"“";font-size:2rem;line-height:0;color:var(--accent);vertical-align:-.35rem;margin-right:.2rem}
+.testimonial-person{display:flex;align-items:flex-start;justify-content:space-between;gap:.8rem;border-top:1px solid var(--line);padding-top:.85rem;margin-top:auto}
+.testimonial-person strong{display:block}
+.testimonial-person span{display:block;color:var(--muted);font-size:.88rem;margin-top:.18rem}
+.testimonial-meta{font-size:.78rem;color:var(--muted);white-space:nowrap}
+.testimonial-note{font-size:.85rem;color:var(--muted);margin-top:1rem}
+@media(max-width:700px){.testimonial-grid{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
@@ -213,7 +226,7 @@ dialog::backdrop{background:rgba(5,3,15,.7);backdrop-filter:blur(4px)}
 <header class="top"><div class="wrap in">
   <a class="brand" href="#top">Sachin R</a>
   <nav aria-label="Main">
-    <a href="#top" aria-current="true">Home</a><a href="#open-roles">Open roles</a><a href="#experience">Experience</a><a href="#services">Expertise</a><a href="#work">Work & resources</a><a href="#ai">AI work</a><a href="#tools">Tools</a><a href="#recruiter-resources">Recruiter Resources</a><a href="#contact">Contact</a>
+    <a href="#top" aria-current="true">Home</a><a href="#open-roles">Open roles</a><a href="#experience">Experience</a><a href="#services">Expertise</a><a href="#work">Work & resources</a><a href="#testimonials">Testimonials</a><a href="#ai">AI work</a><a href="#tools">Tools</a><a href="#recruiter-resources">Recruiter Resources</a><a href="#contact">Contact</a>
   </nav>
   <div class="right">
     <button class="pill" id="kbtn" type="button" aria-label="Open quick navigation">Search<kbd>Ctrl K</kbd></button>
@@ -472,6 +485,32 @@ dialog::backdrop{background:rgba(5,3,15,.7);backdrop-filter:blur(4px)}
     </ul>
   </section>
 
+
+
+  <section id="testimonials" class="rv">
+    <p class="eyebrow">CANDIDATE &amp; CLIENT FEEDBACK</p>
+    <h2>Recommendations <i>&amp; testimonials</i></h2>
+    <p class="sub">A few words from professionals I have supported and worked alongside throughout their career journeys.</p>
+    <div class="testimonial-grid">
+      <article class="testimonial-card">
+        <blockquote>Sachin is a very personable person to his employees and clients. He never hesitates to ensure his clients are more than satisfied. His eagerness to please his company and clients is one of many of his strong suits which makes him a great asset to any company.</blockquote>
+        <div class="testimonial-person"><div><strong>Edgar Dace</strong><span>ISTQB® (CTFL) | SQA</span></div><div class="testimonial-meta">December 28, 2019</div></div>
+      </article>
+      <article class="testimonial-card">
+        <blockquote>I had the absolute pleasure of working with Sachin, and I can confidently say that his support was instrumental during one of the most important phases of my professional journey—navigating the job search and the H1B visa process. His strategic guidance, consistent follow-ups, and encouragement gave me the clarity and confidence I needed during the stressful time.</blockquote>
+        <div class="testimonial-person"><div><strong>Kavitha Lakshminarasaiah</strong><span>Senior Data Engineer / Architect · Snowflake, Databricks, AWS, Azure &amp; GCP</span></div><div class="testimonial-meta">April 26, 2025</div></div>
+      </article>
+      <article class="testimonial-card">
+        <blockquote>As a Lead Recruiter, Sachin was proactive, transparent, and genuinely invested in helping me find the right opportunities. From identifying suitable client roles to preparing me for interviews, he went above and beyond at every stage. His ability to understand both the needs of the client and my career goals made the entire process smooth and efficient.</blockquote>
+        <div class="testimonial-person"><div><strong>Achyuth Yallambhotla</strong><span>Senior Full Stack Java Developer · Spring Boot, Microservices, AWS, Angular / React</span></div><div class="testimonial-meta">May 14, 2025</div></div>
+      </article>
+      <article class="testimonial-card">
+        <blockquote>I rarely remember recruiters because they are such a brief connection during job search process, but it was definitely different with Sachin. He was very detailed, attentive to my questions and requests, always fast to respond and respected my preferred ways of communication. He made me feel comfortable joining a new team and confident while signing all the documents and navigating onboarding.</blockquote>
+        <div class="testimonial-person"><div><strong>Anastasia Bielka</strong><span>Data Quality Analyst II at Meta</span></div><div class="testimonial-meta">April 30, 2025</div></div>
+      </article>
+    </div>
+    <p class="testimonial-note">Excerpts from LinkedIn recommendations. Wording is retained from the recommendations, with selected passages shortened for page readability.</p>
+  </section>
 
   <section id="recruiter-resources" class="rv">
     <div class="section-head resource-intro">
